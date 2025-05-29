@@ -1,0 +1,56 @@
+{
+    "dataconfig": {
+        "Tank": {
+            "t1": {
+                "type": "Tank1",
+                "x": 30,
+                "y": 100,
+                "mqttSub": "tank/1/level"
+            },
+            "t2": {
+                "type": "Tank1",
+                "x": 200,
+                "y": 200,
+                "mqttSub": "tank/2/level"
+            },
+            "t3": {
+                "type": "Tank2",
+                "x": 400,
+                "y": 100,
+                "mqttSub": "tank/2/level"
+            },
+            "t4": {
+                "type": "Tank1",
+                "x": 600,
+                "y": 100,
+                "mqttSub": "tank/4/level"
+            }
+        },
+        "pipe": {
+            "pipe1": {
+                "type": "not used for now",
+                "p0": {
+                    "tank": "t1",
+                    "connector": 2
+                },
+                "p1": {
+                    "tank": "t2",
+                    "connector": 1
+                },
+                "routePipe": "vertical-first"
+            },
+            "pipe2": {
+                "type": "not used for now",
+                "p0": {
+                    "tank": "t2",
+                    "connector": 3
+                },
+                "p1": {
+                    "tank": "t3",
+                    "connector": 2
+                },
+                "routePipe": "horizontal-first"
+            }
+        }
+    }
+}
